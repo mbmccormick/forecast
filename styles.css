@@ -17,16 +17,6 @@ a:hover {
   text-decoration: underline;
 }
 
-#content {
-  position: absolute;
-  top: 50%;
-  left: 5%;
-  right: 5%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  text-align: center;
-}
-
 /* Style for headers */
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
@@ -81,14 +71,14 @@ ul li {
 }
 
 /* The container */
-.container {
+#container {
   padding: 20px;
   box-sizing: border-box;
 }
 
 /* Responsive Design */
 @media (max-width: 600px) {
-  .container {
+  #container {
     padding: 10px;
   }
 }
