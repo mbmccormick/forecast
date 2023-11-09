@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const glossaryContent = doc.querySelector('.glossaryProduct');
 
       if (glossaryContent) {
-        contentDiv.innerHTML = glossaryContent.innerHTML;
+        contentDiv.innerHTML = '<pre>' + glossaryContent.innerHTML + '</pre>';
       } else {
         contentDiv.innerHTML = 'Glossary content not found.';
       }
