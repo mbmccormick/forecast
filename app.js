@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(data => {
       const parser = new DOMParser();
       const doc = parser.parseFromString(data, 'text/html');
-      const glossaryContent = doc.querySelector('#glossaryProduct');
+      const glossaryContent = doc.querySelector('pre');
 
       if (glossaryContent) {
         contentDiv.innerHTML = glossaryContent.innerHTML;
